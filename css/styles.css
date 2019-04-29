@@ -56,6 +56,7 @@ div {
 
 .wrap {
     width: 100%;
+    overflow: hidden;
 }
 
 .floatleft {
@@ -67,8 +68,9 @@ div {
     border-right: 5px solid black;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    height: 265px;
     text-align: justify;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
 }
 
 .floatright {
@@ -78,6 +80,13 @@ div {
     border-right: 5px solid black;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    height: 265px;
     width: 40%;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
 }
+@media screen and (max-width:768px) { 
+    /* For mobile phones: */                           
+    .floatleft, .floatright {
+    width:100%;                           
+    }                        
+  }
